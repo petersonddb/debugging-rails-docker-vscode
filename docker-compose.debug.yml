@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    command: bash -c "rm -f tmp/pids/server.pid && rdebug-ide --host 0.0.0.0 --port 9000 -- bin/rails s -p 3000 -b 0.0.0.0"
+    ports:
+      - 9000:9000

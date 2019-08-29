@@ -1,0 +1,19 @@
+<h2><%= bug %></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Identification</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% collection.each do |bug| %>
+      <tr>
+        <td><%= bug.id %></td>
+        <td><%= bug.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,7 @@
+<h1>Bugs</h1>
+
+<%= render 'no_bugs' if @bugs.empty? %>
+
+<% @bugs.each do |bug, collection| %>
+  <%= render 'basic_info_table', bug: bug, collection: collection %>
+<% end %>

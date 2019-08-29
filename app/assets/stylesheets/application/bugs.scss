@@ -1,0 +1,22 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  width: 7em;
+  min-width: 7em;
+  max-width: 7em;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
